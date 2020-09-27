@@ -19,7 +19,7 @@ def analyse_text():
             "withSpaces": length_with_space,
             "withoutSpaces": length_without_space
         },
-        "wordCount": helpers.count_text_length(text),
+        "wordCount": helpers.count_text_words(text),
         "characterCount": helpers.count_text_characters(text)
     }
 
