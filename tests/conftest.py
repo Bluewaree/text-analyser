@@ -1,9 +1,13 @@
 import pytest
 
-from api import app
+from api import app as flask_app
+
 
 @pytest.fixture
 def app():
-    app = main.create_app()
-    app.debug = True
+    yield flask_app
+
+
+@pytest.fixture
+def client(app):
     return app.test_client()
