@@ -10,8 +10,11 @@ def test_text_length_count():
 def test_text_words_count():
     text = "a b"
     text_with_extra_spaces = "    a b     c    "
+    text_empty = ""
     assert helpers.count_text_words(text) == 2
     assert helpers.count_text_words(text_with_extra_spaces) == 3
+    assert helpers.count_text_words(text_empty) == 0
+
 
 
 def test_text_characters_count():

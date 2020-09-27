@@ -11,7 +11,11 @@ def count_text_length(text):
 
 def count_text_words(text):
     text_without_extra_spaces = re.sub(" {2,} ", " ", text).strip()
-    return len(text_without_extra_spaces.split(" "))
+    wordCount = 0
+    if len(text_without_extra_spaces)>0:
+        wordCount = len(text_without_extra_spaces.split(" "))
+    return wordCount
+
 
 def count_text_characters(text):
     letters_count = [0] * 26
