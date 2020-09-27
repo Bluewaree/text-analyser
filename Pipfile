@@ -5,7 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "*"
-pytest-django = "*"
+pytest-flask = "*"
 
 [packages]
 flask = "*"
